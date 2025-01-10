@@ -10,7 +10,9 @@ public class User
     public DateTime CreatedDate { get; set; }
     public DateTime? UpdatedDate { get; set; }
     
+    public UserProfile UserProfile { get; set; }
     public ICollection<Role> Roles { get; set; }
     public ICollection<ActivityLog> ActivityLogs { get; set; }
     public ICollection<Subscription> Subscriptions { get; set; }
+    public ICollection<Record> Records { get; set; }
 }
